@@ -44,5 +44,6 @@ io.on("connection", function (socket) {
   });
 });
 
+const port = process.env.PORT || 4000
 
-server.listen(3000);
+server.listen(port);
