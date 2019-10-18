@@ -1,7 +1,8 @@
 const app = require('express')();
 const server = require('http').createServer(app);
 const io = require('socket.io')(server);
-
+const mongoDB = process.env.DB_MONGO_URL;
+console.log(mongoDB);
 var users = [];
 var userList = []
 app.get('/', (req, res) => {
